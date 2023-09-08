@@ -1,18 +1,20 @@
 #include <stdio.h>
+include < ctype.h >
 
 /**
- * main - Prints the alphabets
+ * main - Entry point
  *
- * Return: always 0 (success)
+ * Return: Always 0 (success)
  */
+
 int main(void)
 {
-	char alp[26] = "abcdefghijklmnopqrstuvwxyz"
-		int i;
-	for (i = 0; i < 26; i++)
-	{
-	putchar(alp[i]);
-	}
-	putchar('\n');
-	return (0);
+        int lowerCase = 'a';
+        while (lowerCase <= 'z')
+        {
+                putchar(lowerCase);
+                lowerCase += 1;
+        }
+        putchar('\n');
+        return (0);
 }
